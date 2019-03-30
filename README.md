@@ -1,0 +1,2 @@
+# Paralell-computing-of-Hausdorff-distance-measure-for-a-vector-wit-a-given-reference-point
+The Hausdorff distance is a mathematical construct to measure the "closeness" of two sets of points or a single set to a refence point that are subsets of a metric space. Here we impliment  the distance using CUDA. This program will return the Hausdorff distance between a set of points with a single given data points. The code that computes the  Hausdorff distance  for a very large vector using parallel approach.
