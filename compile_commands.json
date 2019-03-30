@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/nebex/Desktop/diststanceVectoreGPU",
+  "command": "/usr/local/cuda-9.1/bin/g++   -isystem /opt/arrayfire/include -I/usr/local/cuda-9.1/include  -g3 -gdwarf-2   -o CMakeFiles/diststanceVectoreGPU.dir/main.cpp.o -c /home/nebex/Desktop/diststanceVectoreGPU/main.cpp",
+  "file": "/home/nebex/Desktop/diststanceVectoreGPU/main.cpp"
+}
+]

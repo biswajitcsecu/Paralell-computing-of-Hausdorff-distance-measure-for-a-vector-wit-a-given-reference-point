@@ -1,0 +1,22 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.8)
+
+
+PROJECT(diststanceVectoreGPU)
+
+
+FIND_PACKAGE(ArrayFire REQUIRED)
+FIND_PACKAGE(CUDA REQUIRED)
+
+INCLUDE_DIRECTORIES(${ArrayFire_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${CUDA_INCLUDE_DIRS})
+
+
+
+set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS} -gencode arch=compute_30,code=sm_30)
+ 
+CUDA_ADD_EXECUTABLE(diststanceVectoreGPU kernel.cu kernel.h main.cpp)
+#CUDA_ADD_LIBRARY(harris SHARED harris.cu)
+
+TARGET_LINK_LIBRARIES(diststanceVectoreGPU ${ArrayFire_LIBRARIES} ${CUDA_LIBRARIES})
+
+
